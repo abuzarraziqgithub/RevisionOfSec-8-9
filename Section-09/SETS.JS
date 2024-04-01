@@ -2,7 +2,7 @@
 // SETS AND MAPS:
 
 // SETS:
-/* GENERAL EXPLANATION:
+/* GENERAL EXPLANATION: SETS
 
 -> IN THE PAST WE HAD ONLY 2 DATA STRUCTURS WHICH ARE ARRAYS(ORDERED) AND OBJECTS.
 
@@ -61,7 +61,7 @@ for (const items of orderSet) {
 const orderSetArr = [...new Set(orderSet)];
 console.log(orderSetArr);
 
-/* SUMMARY:
+/* SUMMARY: SETS
 
 -> SET IS THE ADVANCE JS DATA STRUCTURE.
 -> SET IS THE COLLECTION OF UNIQUE VALUES.
