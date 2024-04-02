@@ -116,3 +116,44 @@ const checkBaggage = function (items) {
 checkBaggage("I have laptop , some food and pocket Knife");
 checkBaggage("Got some snacks and a gun for protection");
 checkBaggage("Snacks and Camera");
+
+// SPLIT METHOD:
+console.log("a+very+nice+string".split("+")); // IT WILL MAKE AN ARRAY OF EVERY WORD.
+console.log("Abuzar RaziQ".split(" "));
+
+// LET'S STORE THE STRINGS OF THE ARRAY USING DESTRUCTURING ARRAYS AND PRINT THE STRINGS.
+const [firstName, lastName] = "Abuzar RaziQ".split(" ");
+console.log(firstName, lastName);
+
+// JOIN METHOD:
+const newName = ["Mr.", firstName, lastName[0].toUpperCase().lastName].join(
+  " "
+);
+console.log(newName);
+
+// PADDING:
+const message = "Go to gate 23!";
+console.log(message.length);
+console.log(message.padStart(20, "+")); // IT ADDED THE 4 + TO START AND THE REST OF THE 14 LETTERS TO THE END SO IT IS NOW 20 LENGTH OF STRING.
+console.log(message.padEnd(20, "+")); //TO THE END
+
+// FUNCTION OF MASKING CREDIT CARD DIGITS:
+const maskCredit = function (number) {
+  const str = number + ""; // CONVERTS TO STRING.
+  const lastStr = str.slice(-4);
+  console.log(lastStr.padStart(str.length, "*"));
+};
+
+maskCredit(22332332);
+
+// REPEAT METHOD:
+const message2 = "Bad weather .... All Departures Delayed ...";
+console.log(message2.repeat(2));
+
+const plansInLine = function (n) {
+  console.log(`There are ${n} Planes in Line ${"✈".repeat(n)}`);
+};
+plansInLine(5);
+plansInLine(53);
+
+// SO THIS IS SOME USEFUL STRING METHODS , THERE ARE MANY METHODS WE CAN CHECK IT ON MOZILLA MDN DOCUMENTATIONS.
