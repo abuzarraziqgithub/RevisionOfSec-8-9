@@ -40,5 +40,3 @@ runOnce();
 
 // SAME FOR THE ARROW FUNCTIONS:
 (() => console.log(`This IIFE ARROW FUNCTION WILL NOT RUN AGAIN!`))();
-
-//
