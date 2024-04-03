@@ -1,0 +1,21 @@
+"use strict";
+
+/* GENERAL EXPLANATION:
+
+-> FLAT METHOD:
+-> THE FLAT METHOD SIMPLY REMOVE THE NESTED ARRAY AND FLATTEND THE ARRAY.
+-> WE CAN PASS ARGUMENT AS WELL IF WE HAVE MORE NESTED ARRAYS IN ONE ARRAY.
+-> IT RETURNS THE ENTIRE NEW ARRAY AND NOT MUTATE THE ORIGINAL ARRAY.
+*/
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6, 7, 8, 9, 10],
+];
+console.log(arr.flat()); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// IF WE HAVE A DEEP ARRAY , SUB ARRAY INSIDE THE SUB ARRAY.
+// WE CAN APPLY THE DEPTH LEVEL OF ARRAY.
+const deepArr = [1, 2, [3, (4)[(6, 7, [8, 9])]], 10];
+console.log(deepArr);
+console.log(deepArr.flat(3));
